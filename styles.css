@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 2px solid red;
 }
 
 .card {
@@ -33,11 +34,6 @@ img {
     object-fit: contain;
 }
 
-footer {
-    padding-top: var(--med);
-    background-color: var(--clr-prim);
-    color: white
-}
 
 header {
     background-image: linear-gradient(330deg, white 50%, var(--clr-prim) 50%);
@@ -88,11 +84,19 @@ header {
 
 h2 {
     text-align: center;
+
+    @media (min-width: 800px) {
+        text-align: left;
+    }
 }
 
 ol {
     display: flex;
     justify-content: center;
+
+    @media (min-width: 800px) {
+        justify-content: start;
+    }
 }
 
 button {
@@ -103,6 +107,24 @@ button {
     cursor: pointer;
 }
 
-footer>section {
-    margin: var(--small);
+
+footer {
+    padding-top: var(--med);
+    background-color: var(--clr-prim);
+    color: white;
+
+    >section {
+        margin: var(--small);
+    }
+
+    @media (min-width: 800px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        padding: var(--big);
+
+        >section {
+            margin: auto var(--small);
+        }
+    }
 }
