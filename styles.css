@@ -3,7 +3,6 @@
 }
 
 * {
-    border: 2px solid red;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -48,5 +47,42 @@ header {
         text-align: center;
         color: white;
         font-size: xx-large;
+    }
+}
+
+.about-container {
+    h2 {
+        text-align: center;
+    }
+
+    ol {
+        display: flex;
+        justify-content: end;
+    }
+}
+
+main {
+    h2 {
+        text-align: center;
+    }
+}
+
+.projects-container {
+    display: grid;
+}
+
+.project-container {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+
+.card-header {
+    display: flex;
+    width: 100%;
+
+    ol {
+        display: flex;
+        justify-content: end;
     }
 }
