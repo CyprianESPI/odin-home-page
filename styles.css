@@ -9,7 +9,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 2px solid red;
 }
 
 .card {
@@ -63,7 +62,9 @@ header {
 }
 
 .projects-container {
+    justify-content: center;
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
 }
 
 .project-container {
