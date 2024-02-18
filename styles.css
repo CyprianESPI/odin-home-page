@@ -1,5 +1,8 @@
 :root {
     --clr-prim: #0891B2;
+    --small: 15px;
+    --med: 30px;
+    --big: 50px;
 }
 
 * {
@@ -40,7 +43,7 @@ header {
 
 .hero-container {
     display: grid;
-    padding: 50px;
+    padding: var(--big);
 
     img,
     h1 {
@@ -53,11 +56,14 @@ header {
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        margin-bottom: 10px;
+        margin-bottom: var(--small);
     }
 }
 
 .about-container {
+
+    margin: 0 var(--small) var(--big) var(--small);
+
     h2 {
         text-align: center;
     }
@@ -81,7 +87,7 @@ main {
 .project-container {
     display: grid;
     grid-template-rows: 2fr 1fr;
-    margin: 15px;
+    margin: var(--small);
 }
 
 
@@ -96,8 +102,8 @@ main {
 }
 
 button {
-    width: 32px;
-    height: 32px;
+    width: var(--med);
+    height: var(--med);
     border: none;
     background: none;
     cursor: pointer;
