@@ -88,12 +88,16 @@ main {
     display: grid;
     grid-template-rows: 2fr 1fr;
     margin: var(--small);
+
+    >section>* {
+        margin: var(--small);
+    }
 }
 
 
 .card-header {
-    display: flex;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
 
     ol {
         display: flex;
